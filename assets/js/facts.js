@@ -15,9 +15,7 @@ function getFactFetch() {
       fact.style.display = "block";
       factText.innerText = data;
     })
-    .catch(err => {
-      console.log(err);
-    });
+    .catch(err => console.log(err));
 }
 
 // userInput.addEventListener("input", getFactAjax);
