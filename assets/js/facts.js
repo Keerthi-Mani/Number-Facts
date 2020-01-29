@@ -9,7 +9,7 @@ function getFactFetch() {
   //   console.log("123...");
   let number = userInput.value;
   //   console.log(number);
-  fetch("http://numbersapi.com/" + number)
+  fetch("https://cors-anywhere.herokuapp.com/http://numbersapi.com/" + number)
     .then(response => response.text())
     .then(data => {
       fact.style.display = "block";
